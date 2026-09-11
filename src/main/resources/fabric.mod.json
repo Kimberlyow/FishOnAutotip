@@ -7,7 +7,7 @@
     "authors": ["Kimberlyow"],
     "contact": {
         "github": "https://github.com/Kimberlyow/FishOnAutotip",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "sources": "https://github.com/Kimberlyow/FishOnAutotip"
     },
     "license": "GPL-3.0",
     "icon": "assets/fishonautotip/icon.png",
