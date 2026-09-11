@@ -1,38 +1,31 @@
 {
-	"schemaVersion": 1,
-	"id": "fishonautotip",
-	"version": "${version}",
-	"name": "FishOnAutotip",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/fishonautotip/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.github.kimberlyow.fishonautotip.FishOnAutotip"
-		],
-		"client": [
-			"com.github.kimberlyow.fishonautotip.client.FishOnAutotipClient"
-		]
-	},
-	"mixins": [
-		"fishonautotip.mixins.json",
-		{
-			"config": "fishonautotip.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+    "schemaVersion": 1,
+    "id": "fishonautotip",
+    "version": "${version}",
+    "name": "FishOnAutotip",
+    "description": "Quality of Life Client-side Mod for Tipping on FishOnMC",
+    "authors": ["Kimberlyow"],
+    "contact": {
+        "github": "https://github.com/Kimberlyow/FishOnAutotip",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "GPL-3.0",
+    "icon": "assets/fishonautotip/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.github.kimberlyow.fishonautotip.client.FishOnAutotipClient"
+        ],
+        "modmenu": [
+            "com.github.kimberlyow.fishonautotip.compat.ModmenuIntegration"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "cloth-config": ">=21.11.150",
+        "modmenu": ">=17.0.0",
+        "minecraft": "~1.21.11",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
 }

@@ -1,0 +1,9 @@
+{
+    "text.autoconfig.fishonautotip.title": "FishOnAutotip",
+    "text.autoconfig.fishonautotip.option.reactionTipAmount": "Reaction Winner $",
+    "text.autoconfig.fishonautotip.option.commonChummerTipAmount": "Common Chummer $",
+    "text.autoconfig.fishonautotip.option.rareChummerTipAmount": "Rare Chummer $",
+    "text.autoconfig.fishonautotip.option.epicChummerTipAmount": "Epic Chummer $",
+    "text.autoconfig.fishonautotip.option.legendaryChummerTipAmount": "Legendary Chummer $",
+    "text.autoconfig.fishonautotip.option.mythicalChummerTipAmount": "Mythical Chummer $"
+}
