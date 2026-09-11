@@ -1,8 +1,8 @@
 # FishOnAutotip
 
-[![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.11-blue)](https://minecraft.net)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-green)](https://opensource.org/license/gpl-3.0)
-[![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-orange)](https://fabricmc.net)
+[![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.11-dc142c)](https://minecraft.net)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-b22121)](https://opensource.org/license/gpl-3.0)
+[![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-ff1482)](https://fabricmc.net)
 
 Quality of Life Client-side Mod for FishOnMC
 Lets you choose to automatically give a tip to other players.
