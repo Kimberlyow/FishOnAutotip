@@ -5,6 +5,7 @@
 [![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-ff1482)](https://fabricmc.net)
 
 Quality of Life Client-side Mod for FishOnMC
+
 Lets you choose to automatically give a tip to other players.
 
 ## Features
@@ -20,5 +21,7 @@ Lets you choose to automatically give a tip to other players.
 GPL-3.0
 
 ## Disclaimer
+
+Made by a real human, this mod is **NOT** vibe-coded.
 
 This project is not affiliated with Mojang, Microsoft, or the FishOnMC server
