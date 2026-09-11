@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.github.kimberlyow.fishonautotip.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
