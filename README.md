@@ -1,9 +1,19 @@
 # FishOnAutotip
 
-## Setup
+Quality of Life Client-side Mod for FishOnMC
+Lets you choose to automatically give a tip to other players.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Features
+
+- Tip Players that place Chummers
+- Tip Reaction Winners
+- Fully customizable Tipping-amount for all Rarities of Chummers and Reaction Winners
+- Options can individually be set to 0 (turned off)
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+GPL-3.0
+
+## Disclaimer
+
+This project is not affiliated with Mojang, Microsoft, or the FishOnMC server
