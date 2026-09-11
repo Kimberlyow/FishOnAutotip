@@ -44,24 +44,29 @@ public class FishOnAutotipClient implements ClientModInitializer {
 
 			FishOnAutotipConfig config = AutoConfig.getConfigHolder(FishOnAutotipConfig.class).getConfig();
 
-			// need optimize performance
-			matchMessage(chatmessage, ReactionPattern, config.reactionTipAmount);
-			matchMessage(chatmessage, CommonChummerPattern, config.commonChummerTipAmount);
-			matchMessage(chatmessage, RareChummerPattern, config.rareChummerTipAmount);
-			matchMessage(chatmessage, EpicChummerPattern, config.epicChummerTipAmount);
-			matchMessage(chatmessage, LegendaryChummerPattern, config.legendaryChummerTipAmount);
-			matchMessage(chatmessage, MythicalChummerPattern, config.mythicalChummerTipAmount);
+			// startsWith is very cheap on performance compared to regex of course, and also many early returns to optimize performance
+			if (chatmessage.startsWith("REACTIONS »")) {
+				matchMessage(chatmessage, ReactionPattern, config.reactionTipAmount);
+			} else if (chatmessage.startsWith("CHUMMER »")) {
+				if (matchMessage(chatmessage, CommonChummerPattern, config.commonChummerTipAmount)) { return; };
+				if (matchMessage(chatmessage, RareChummerPattern, config.rareChummerTipAmount)) { return; };
+				if (matchMessage(chatmessage, EpicChummerPattern, config.epicChummerTipAmount)) { return; };
+				if (matchMessage(chatmessage, LegendaryChummerPattern, config.legendaryChummerTipAmount)) { return; };
+				matchMessage(chatmessage, MythicalChummerPattern, config.mythicalChummerTipAmount);
+			}
 		});
 	}
 
-	private void matchMessage(String chatmessage, Pattern pattern, int reactionTipAmount) {
+	private boolean matchMessage(String chatmessage, Pattern pattern, int reactionTipAmount) {
 		// FishOn doesnt allow /pay with less than 100$
-		if (reactionTipAmount < 100) { return; }
+		if (reactionTipAmount < 100) { return false; }
 		
 		Matcher matcher = pattern.matcher(chatmessage);
 			if (matcher.find()) {
 				onMatchFound(matcher.group(1), reactionTipAmount);
-			}
+				return true;
+		}
+		return false;
 	}
 
 	private void onMatchFound(String paytarget, int reactionTipAmount) {
