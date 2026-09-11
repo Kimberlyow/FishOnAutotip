@@ -12,7 +12,8 @@ Lets you choose to automatically give a tip to other players.
 - Tip Players that place Chummers
 - Tip Reaction Winners
 - Fully customizable Tipping-amount for all Rarities of Chummers and Reaction Winners
-- Options can individually be set to 0 (turned off)
+- Minimum Tip amount is 100 $
+- Options can individually be set to below 100 (turned off)
 
 ## License
 
